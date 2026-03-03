@@ -20,3 +20,17 @@ mean_tidal_range = 3    # m
 ```
 
 The script will print the predicted capacity, rated power per turbine, rotor diameter, rated head, and the number of turbines required.
+
+## Functions
+
+### `determine_capacity(mean_area, mean_tidal_range, efficiency=0.4, capacity_factor=0.2)`
+Estimates the total installed capacity (MW) of the lagoon from its area and tidal range, using the potential energy stored in the tidal prism.
+
+### `determine_rated_power(mean_tidal_range, turbine_params=None)`
+Returns the peak power output (MW) of a single turbine by scanning its hill chart across a range of head values.
+
+### `hill_chart_parametrisation_h(h, turbine_params)`
+Core performance model. Returns the power (MW) and discharge (m³/s) of a turbine at a given tidal head difference `h`, following empirical hill chart equations.
+
+### `extract_hill_chart(h_array, turbine_params)`
+Sweeps `hill_chart_parametrisation_h` over an array of head values and returns a dataset suitable for plotting the full turbine performance curve.
