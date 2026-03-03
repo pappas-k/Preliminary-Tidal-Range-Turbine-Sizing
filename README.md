@@ -57,5 +57,5 @@ Sweeps `hill_chart_parametrisation_h` over an array of head values and returns a
 - Pappas, K., et al. (2023). Sensitivity of tidal range assessments to harmonic constituents and analysis timeframe. *Renewable Energy*. doi: [10.1016/j.renene.2023.01.062](https://doi.org/10.1016/j.renene.2023.01.062)
 
 - Neil, C., et al. (2018). Tidal range energy resource and optimization – Past perspectives and future challenges. *Renewable Energy*, 127, 763–778.
-- Angeloudis, A., Kramer, S.C., Avdis, A., & Piggott, M.D. (2018). Optimising tidal range power plant operation. *Applied Energy*, 212, 680–690.
+- Angeloudis, A., Kramer, S.C., Avdis, A., & Piggott, M.D. (2018). Optimising tidal range power plant operation. *Applied Energy*, 212, 680–690. doi:  (https://doi.org/10.1016/j.apenergy.2017.12.052)  
 
