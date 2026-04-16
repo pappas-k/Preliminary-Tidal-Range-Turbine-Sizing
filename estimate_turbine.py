@@ -58,7 +58,7 @@ def hill_chart_parametrisation_h(h, turbine_params):
 
     q = p1 * (10 ** 6) / (turbine_params["dens"] * turbine_params["g"] * h)
 
-    return max(0.,p2), q
+    return max(0., p2), q
 
 def extract_hill_chart(h_array, turbine_params):
     """
@@ -144,11 +144,10 @@ if __name__ == "__main__":
                       "eta": [0.93, 0.83]}
 
     # Calculate turbine rated power:
-    rated_power=determine_rated_power(mean_tidal_range, turbine_params=turbine_params)
+    rated_power = determine_rated_power(mean_tidal_range, turbine_params=turbine_params)
 
-    #Calculate number of turbines:
+    # Calculate number of turbines:
     turbines_num = capacity / rated_power
-
 
     print(f"Rotor diameter = {turbine_params['t_d']} m")
     print(f"Rated head = {turbine_params['h_cap']} m")
